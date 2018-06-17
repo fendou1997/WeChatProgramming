@@ -1,0 +1,46 @@
+<view class="mode-container">
+  <image class='head-image' src="{{isPlayingMusic?music.coverImgUrl:imgSrc}}"></image>
+  <image catchtap='onMusicTap' wx:if="{{isPlayingMusic}}" class='audio' src='/images/music/music-stop.png'></image>
+  <image catchtap='onMusicTap' wx:else class='audio' src='/images/music/music-start.png'></image>
+  <view class='author-date'>
+    <image class="avatar" src="{{avatar}}"></image>
+    <text class='author'>{{author}}</text>
+    <text class='const-text'>发表于</text>
+    <text class='date'>{{dataTime}}前</text>
+  </view>
+  <text class='mode-title'>{{title}}</text>
+  <view class='tool'>
+    <view class='circle-img'>
+      <image wx:if="{{collected}}" catchtap='onCollectionTap' src="/images/icon/success.png"></image>
+      <image wx:else catchtap='onCollectionTap' src="/images/icon/down.png"></image>
+      <image class='share-img' wx:if="{{love}}" catchtap='onloveTap' src="/images/icon/xinhong.png"></image>
+      <image class='share-img' wx:else catchtap='onloveTap' src="/images/icon/xinhui.png"></image>
+    </view>
+    <view class='horizon'></view>
+  </view>
+  <text class='detail'>{{detail}}</text>
+  <view class='fengzhuang'>
+    <view class="weui-cells weui-cells_after-title">
+      <view url="mode-detail-time/mode-detail-time" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="/images/icon/time.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">时间</view>
+  
+      
+          <picker bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
+            <view class="weui-cell__ft weui-cell__ft_in-access">{{countries[countryIndex]}}</view>
+          </picker>
+       
+        <image class='arrow' src="/images/music/arrow-right.png"></image>
+
+      </view>
+
+    </view>
+    <view class='button-designbymyself'>
+      <view class="page__bd page__bd_spacing">
+        <button class="weui-btn" type="primary">应用到该设备</button>
+      </view>
+    </view>
+  </view>
+</view>

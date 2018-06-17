@@ -1,0 +1,24 @@
+<import src="mode-item/mode-item-template.wxml" />
+<view>
+
+  <scroll-view class='grid-container' scroll-y="true" scroll-x="false" bindscrolltolower="onScrollLower">
+    <swiper catchtap='onSwiperTap' indicator-dots="true" autoplay='true' interval='5000'>
+      <swiper-item>
+        <image data-modeId="1" src='{{swiper1}}'></image>
+      </swiper-item>
+      <swiper-item>
+        <image data-modeId="2" src='{{swiper2}}'></image>
+      </swiper-item>
+      <swiper-item>
+        <image data-modeId="3" src='{{swiper3}}'></image>
+      </swiper-item>
+    </swiper>
+
+    <block wx:for="{{mode_key}}" wx:for-item="item">
+      <view catchtap='onModeTap' data-modeId="{{item.modeId}}">
+        <template is="modeItem" data="{{...item}}" />
+      </view>
+
+    </block>
+  </scroll-view>
+</view>

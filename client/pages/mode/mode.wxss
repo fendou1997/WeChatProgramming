@@ -1,0 +1,28 @@
+@import "mode-item/mode-item-template.wxss";
+
+swiper{
+  height:500rpx; 
+  width:100%
+
+}
+.grid-container{
+  height: 1300rpx;
+  margin: 0rpx 0 40rpx 0rpx;
+}
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+swiper image{
+
+  height:500rpx;
+   width:100%
+}
+
+

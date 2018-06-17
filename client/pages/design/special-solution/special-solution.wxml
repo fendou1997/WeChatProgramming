@@ -1,0 +1,84 @@
+<view class='mode-detail-container'>
+  <view class="page">
+    <view class="page__bd">
+      <view class="weui-cells">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <view class="weui-uploader">
+              <view class="weui-uploader__hd">
+                <view class="weui-uploader__title">音频文件上传</view>
+                <view class="weui-uploader__info">{{fileslength}}/3</view>
+              </view>
+              <view class="weui-uploader__bd">
+                <view class="weui-uploader__files" id="uploaderFiles">
+                  <view>
+                    <view wx:if="{{uploadstatus1}}" class="weui-uploader__input-box">
+                      <view class="weui-uploader__input" bindtap="doRecord" data-id="1"></view>
+                    </view>
+                    <view wx:else>
+                      <view class="weui-uploader__file weui-uploader__file_status">
+                        <image class="weui-uploader__img" mode="aspectFill" />
+                        <view class="weui-uploader__file-content">
+                          <icon type="success" size="23" color="#F43530"></icon>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                  <view>
+                    <view wx:if="{{uploadstatus2}}" class="weui-uploader__input-box">
+                      <view class="weui-uploader__input" bindtap="doRecord" data-id="2"></view>
+                    </view>
+                    <view wx:else>
+                      <view class="weui-uploader__file weui-uploader__file_status">
+                        <image class="weui-uploader__img" mode="aspectFill" />
+                        <view class="weui-uploader__file-content">
+                          <icon type="success" size="23" color="#F43530"></icon>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                  <view>
+                    <view wx:if="{{uploadstatus3}}" class="weui-uploader__input-box">
+                      <view class="weui-uploader__input" bindtap="doRecord" data-id="3"></view>
+                    </view>
+                    <view wx:else>
+                      <view class="weui-uploader__file weui-uploader__file_status">
+                        <image class="weui-uploader__img" mode="aspectFill" />
+                        <view class="weui-uploader__file-content">
+                          <icon type="success" size="23" color="#F43530"></icon>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+
+
+              </view>
+
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="weui-cells__title">解决方案要求：</view>
+
+  <form bindsubmit="bindFormSubmit">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea name="textarea" class="weui-textarea" cursor-spacing="10" adjust-position="true" maxlength='200'  placeholder="请输入文本" style="height: 10.3em" />
+        <view class="weui-textarea-counter">字数不超过200</view>
+
+      </view>
+
+    </view>
+    
+    </view>
+    <view class='button-designbymyself'>
+      <view class="page__bd page__bd_spacing">
+        <button form-type="submit"  class="weui-btn" type="primary">发送</button>
+      </view>
+    </view>
+  </form>

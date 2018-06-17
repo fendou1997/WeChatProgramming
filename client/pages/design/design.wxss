@@ -1,0 +1,55 @@
+
+.design-container {
+   background-color: #f2f2f2; 
+  display: flex;
+  flex-direction: column;
+}
+.weuicells {
+  position: relative;
+  margin-top: 0rpx;
+  background-color: #fff;
+  line-height: 1.41176471;
+  font-size: 17px;
+}
+
+.weui-footer{
+  margin-top: 100px;
+    margin-bottom: 30px;
+}
+.weui-footer_fixed-bottom{
+    margin-bottom: 0;
+}
+.fengzhuang1{
+margin-top: 35rpx;
+}
+.fengzhuang{
+  margin-top: 15rpx;
+}
+.arrow{
+vertical-align: middle;
+width: 18rpx;
+height: 32rpx;
+}
+
+.avatar-img {
+  height: 200rpx;
+  width: 200rpx;
+  position: absolute;
+  top: 220rpx;
+  right: 30rpx;
+}
+
+
+.design-img {
+  width: 100%;
+  height: 500rpx;
+  -webkit-filter: blur(20px);
+}
+
+ .head-img-hover {
+ 
+  position: absolute;
+  top: 420rpx;
+  right: 80rpx;
+
+} 

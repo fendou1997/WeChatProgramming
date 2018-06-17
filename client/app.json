@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/mode/mode",
+     "pages/design/special-solution/special-solution",
+    "pages/design/design",
+    "pages/design/blue-tooth/bluetooth",
+
+
+    "pages/design/set-up/set-up",
+    "pages/design/Machine-Message/Machine-Message",
+    
+    "pages/mode/mode-detail/mode-detail"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#405f80"
+  },
+  "tabBar": {
+    "color": "#405f80",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#c8ad45",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/mode/mode",
+        "text": "模式超市",
+        "iconPath": "images/tab/mode_hl.png",
+        "selectedIconPath": "images/tab/mode.png"
+      },
+      {
+        "pagePath": "pages/design/design",
+        "text": "个人设置",
+        "iconPath": "images/tab/design_hl.png",
+        "selectedIconPath": "images/tab/design.png"
+      }
+    ]
+  }
+}

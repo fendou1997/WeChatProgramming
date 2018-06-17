@@ -1,0 +1,69 @@
+@import "/pages/mode/stars/stars-template.wxss";
+.mode-author-date{
+    margin-top:10rpx;
+    margin-bottom:20rpx;
+    margin-left:10rpx;
+}
+.mode-author{
+    width:60rpx;
+    height:60rpx;
+    vertical-align:middle;
+}
+.mode-date{
+    margin-left:20rpx;
+    vertical-align:middle;
+    margin-bottom:5px;
+    font-size:26rpx;
+}
+.mode-title{
+    font-size:35rpx;
+    font-weight:600;
+    color:#333;
+    margin-bottom:10rpx;
+    margin-left:20rpx;
+}
+.mode-image{
+    margin-left: 16rpx;
+    width:100%;
+    height:340rpx;
+    margin:auto 0;
+    margin-bottom: 15rpx;
+
+}
+.mode-content{
+    color:#666;
+    font-size:28rpx;
+    margin-bottom: 20rpx;
+    padding-left: 20rpx;
+    letter-spacing:2rpx;
+    line-height: 40rpx;
+}
+.mode-like{
+  display: flex;
+  flex-direction: row;
+  font-size:30rpx;
+  line-height: 35rpx;
+  margin-left:20rpx;
+  
+}
+.mode-like-image{
+    height:30rpx;
+    width:30rpx;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.mode-like-font{
+    vertical-align: middle;
+    margin-right: 28rpx;
+    color: #1f3463;
+}
+.mode-container{
+    display:flex;
+    flex-direction:column;
+    margin-top:20rpx;
+    margin-bottom:40rpx;
+    background-color:#fff;
+    border-bottom:1px solid #ededed;
+    /*border-top:1px solid #ededed;*/
+    padding-bottom:5px;
+}

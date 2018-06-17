@@ -1,0 +1,19 @@
+<import src="/pages/mode/stars/stars-template.wxml" />
+<template name="modeItem">
+  <view class='mode-container'>
+    <view class='mode-author-date'>
+      <image class='mode-author' src="{{avatar}}"></image>
+      <text class='mode-date'>{{date}}</text>
+    </view>
+    <text class='mode-title'>{{title}}</text>
+    <image class='mode-image' src="{{imgSrc}}"></image>
+    <text class='mode-content'>{{content}}</text>
+     <view class='mode-like'> 
+        <image class='mode-like-image' src='/images/icon/download.png'></image>
+        <text class='mode-like-font'>{{reading}}</text>
+
+      <template is="starsTemplate" data="{{stars:stars,score:score}}"/>
+
+     </view> 
+  </view>
+</template>
